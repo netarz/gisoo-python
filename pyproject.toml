@@ -1,18 +1,28 @@
 [build-system]
-requires = ["hatchling"]
+requires = ["hatchling>=1.27"]
 build-backend = "hatchling.build"
 
 [project]
 name = "gisoo"
-version = "0.1.0"
+version = "0.1.1"
 description = "Tiny helper that points the official OpenAI Python client at Gisoo (gisoo.pro), an OpenAI-compatible AI API."
 readme = "README.md"
-license = { text = "MIT" }
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Gisoo", email = "info@gisoo.pro" }]
 requires-python = ">=3.9"
 dependencies = ["openai>=1.0.0"]
 keywords = ["openai", "llm", "ai-gateway", "persian", "gisoo"]
 classifiers = [
-  "License :: OSI Approved :: MIT License",
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Typing :: Typed",
   "Programming Language :: Python :: 3",
   "Intended Audience :: Developers",
 ]
@@ -20,7 +30,8 @@ classifiers = [
 [project.urls]
 Homepage = "https://gisoo.pro"
 Documentation = "https://gisoo.pro/docs"
-Repository = "https://github.com/netarz/gisoo-python"
+Source = "https://github.com/netarz/gisoo-python"
+Issues = "https://github.com/netarz/gisoo-python/issues"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/gisoo"]

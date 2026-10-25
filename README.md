@@ -4,10 +4,8 @@ A tiny helper that gives you the official [`openai`](https://pypi.org/project/op
 
 ## Install
 
-Not on PyPI yet. Install from GitHub:
-
 ```bash
-pip install git+https://github.com/netarz/gisoo-python
+pip install gisoo
 ```
 
 ## Use
@@ -55,13 +53,6 @@ for m in list_models(type="image"):
 - The API stores metadata, not request or response bodies.
 - Gisoo also has an Anthropic-compatible endpoint (`https://gisoo.pro/api`) and a remote MCP server (`https://gisoo.pro/api/mcp`).
 
-Docs (Persian): <https://gisoo.pro/docs> · App: <https://gisoo.pro>
+Docs (Persian): <https://gisoo.pro/docs> · App: <https://gisoo.pro> · Models: <https://gisoo.pro/models>
 
-## Publish (maintainers)
-
-```bash
-python -m pip install build twine
-python -m build && twine upload dist/*
-```
-
-MIT licensed. Made by [NetArz](https://netarz.ir).
+MIT licensed. Source: <https://github.com/netarz/gisoo-python>
